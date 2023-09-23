@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "bin/main.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "device": "STM32L4R5ZI",
+            "gdbPath": "gdb-multiarch",
+            "configFiles": [
+                "config/openocd/stlink.cfg",
+                "config/openocd/stm32l4x.cfg",
+            ],
+        },
+    ],
+}
